@@ -1,0 +1,44 @@
+.block{
+    background-color: #000;
+    display: flex;
+}
+
+.box{
+    flex: 1;
+    margin: 100px;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text1{
+    position: absolute;
+    left: 3px;
+}
+
+.text3{
+    position: absolute;
+    right: 3px;
+}
+
+@media (max-width: 480px){
+    .block{
+        flex-direction: column;
+    }
+
+    .box{
+        flex: auto;
+    }
+
+    .text2{
+        position: absolute;
+        left: 3px;
+    }
+
+    .text3{
+        left: 3px;
+    }
+}

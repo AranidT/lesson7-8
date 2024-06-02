@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'MyFont';
+    font-weight: 700;
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'MyFont';
+    font-weight: 400;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'MyFont';
+    font-weight: 500;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+}
+
+.title-1{
+    margin: 50px;
+    text-align: center;
+    font-family: 'MyFont';
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.title-2{
+    text-align: center;
+    font-family: 'MyFont';
+    font-weight: 400;
+    color: gray;
+    font-size: 17px;
+}
+
+.block{
+    display: flex;
+    margin: 70px;
+}
+
+.box{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.image{
+    height: 75px;
+    width: 75px;
+    margin-bottom: 20px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.name{
+    font-family: 'MyFont';
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text{
+    font-family: 'MyFont';
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .title-1{
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .title-2{
+        font-size: 14px;
+    }
+
+    .block{
+        flex-direction: column;
+        margin: 25px;
+    }
+    
+    .box{
+        flex: block;
+        margin: 5px;
+        margin-bottom: 65px;
+    }
+    
+    .image{
+        height: 50px;
+        width: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .name{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .text{
+        font-size: 12px;
+    } 
+}

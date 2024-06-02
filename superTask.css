@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Myfont';
+    font-weight: 700;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'MyFont';
+    font-weight: 500;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'MyFont';
+    font-weight: 400;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Alata';
+    src: url(fonts/Alata-Regular.ttf);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.block{
+    height: 600px;
+    /* width: 350px; */
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    margin: 30px;
+    flex: 1;
+}
+
+.image{
+    height: 350px;
+    width: 390px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.description{
+    margin-bottom: 50px;
+    margin-top: 350px;
+}
+
+.name-cake{
+    font-family: 'MyFont';
+    font-weight: 700;
+    font-size: 30px;
+    color: deepskyblue;
+    margin-bottom: 10px;
+}
+
+.grade{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.score{
+   font-family: 'Alata';
+   font-size: 25px;
+   color: midnightblue; 
+   margin-right: 7px;
+}
+
+.icon{
+    height: 23px;
+    width: 23px;
+}
+
+.text{
+    font-family: 'MyFont';
+    font-weight: 400;
+    font-size: 20px;
+    color: darkgrey;
+}
+
+.price{
+    font-family: 'MyFont';
+    font-weight: 400;
+    font-size: 23px;
+    color: darkgrey;
+    margin-bottom: 50px;
+}
+
+.price-number{
+    font-family: 'Alata';
+    color: midnightblue; 
+}
+
+@media (max-width: 765px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+   
+    .block{
+        height: 600px;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+        flex-grow: 1;
+        flex-basis: 42%;
+        max-width: 45%;
+    }
+   
+    .image{
+        height: 350px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .description{
+        margin-bottom: 20px;
+        margin-top: 370px;
+    }
+    
+    .name-cake{
+        font-size: 28px;
+    }
+    
+    .text{
+        font-size: 19px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .block{
+        height: 390px;
+        border-radius: 15px;
+        padding: 15px;
+        margin: 20px;
+        max-width: 100%;
+    }
+    
+    .image{
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    
+    
+    .description{
+        margin-bottom: 20px;
+        margin-top: 250px;
+    }
+    
+    .name-cake{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .grade{
+        margin-bottom: 5px;
+    }
+    
+    .score{
+       font-size: 15px; 
+       margin-right: 7px;
+    }
+    
+    .icon{
+        height: 17px;
+        width: 17px;
+    }
+    
+    .text{
+        font-size: 15px;
+    }
+    
+    .price{
+        font-size: 20px;
+    }
+    
+}

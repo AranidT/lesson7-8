@@ -1,0 +1,27 @@
+body{
+    background-color: #000;
+}
+
+p{
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@media (max-width: 768px){
+    body{
+        background-color: #fff;
+    }
+
+    p{
+        color: #000;
+        font-size: 16px;
+        font-family: 'MyFont';
+    }
+}
